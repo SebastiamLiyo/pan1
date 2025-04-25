@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qbit Gastronomía</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-zinc-900 via-black to-zinc-800 text-white px-6 py-12 md:px-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Gestión Inteligente para tu Panadería, Cafetería o Restaurante</h1>
+      <p class="text-lg text-gray-300 mb-8">Con Qbit, simplificá el control de tu negocio: ventas, stock, caja, reportes y facturación oficial en un solo lugar.</p>
+      <form class="grid gap-4" onsubmit="handleSubmit(event)">
+        <input type="text" id="nombre" placeholder="Tu nombre" class="border border-gray-600 bg-zinc-800 text-white rounded-xl p-3 w-full focus:ring-2 focus:ring-orange-400" required />
+        <input type="text" id="negocio" placeholder="Tipo de negocio (panadería, etc)" class="border border-gray-600 bg-zinc-800 text-white rounded-xl p-3 w-full focus:ring-2 focus:ring-orange-400" required />
+        <input type="tel" id="whatsapp" placeholder="Tu número de WhatsApp" class="border border-gray-600 bg-zinc-800 text-white rounded-xl p-3 w-full focus:ring-2 focus:ring-orange-400" required />
+        <button type="submit" class="text-lg px-6 py-3 w-full bg-orange-500 hover:bg-orange-400 rounded-xl font-bold">Enviar por WhatsApp</button>
+      </form>
+    </div>
+    <div>
+      <div class="rounded-2xl overflow-hidden shadow-xl aspect-[9/16]">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video demo Qbit" class="w-full h-full" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid gap-8 mt-20 md:grid-cols-3 lg:grid-cols-5">
+    <div class="rounded-2xl shadow-xl p-6 text-center bg-zinc-900"><h2 class="text-xl font-semibold mb-2">📊 Estadísticas Claras</h2><p class="text-gray-400">Visualizá los números clave de tu negocio en tiempo real.</p></div>
+    <div class="rounded-2xl shadow-xl p-6 text-center bg-zinc-900"><h2 class="text-xl font-semibold mb-2">🧾 Facturación Oficial</h2><p class="text-gray-400">Emití facturas A, B y C al instante, integradas con ARCA AFIP.</p></div>
+    <div class="rounded-2xl shadow-xl p-6 text-center bg-zinc-900"><h2 class="text-xl font-semibold mb-2">📦 Control de Stock</h2><p class="text-gray-400">Controlá productos, insumos o combos al detalle.</p></div>
+    <div class="rounded-2xl shadow-xl p-6 text-center bg-zinc-900"><h2 class="text-xl font-semibold mb-2">🎯 Servicio Personalizado</h2><p class="text-gray-400">Nos adaptamos a cada negocio y necesidad.</p></div>
+    <div class="rounded-2xl shadow-xl p-6 text-center bg-zinc-900"><h2 class="text-xl font-semibold mb-2">🕐 Soporte 24/7</h2><p class="text-gray-400">Siempre disponibles para ayudarte.</p></div>
+  </div>
+
+  <div class="mt-20 max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div class="rounded-2xl shadow-md text-center bg-zinc-900 p-4"><h3 class="text-lg font-semibold mb-2">⭐️⭐️⭐️⭐️⭐️</h3><p class="text-gray-300 italic">“Qbit nos dio el control y la tranquilidad que necesitábamos en Solving.”</p><p class="mt-2 font-bold text-orange-500">Solving</p></div>
+    <div class="rounded-2xl shadow-md text-center bg-zinc-900 p-4"><h3 class="text-lg font-semibold mb-2">⭐️⭐️⭐️⭐️⭐️</h3><p class="text-gray-300 italic">“Qbit nos dio el control y la tranquilidad que necesitábamos en Pan House.”</p><p class="mt-2 font-bold text-orange-500">Pan House</p></div>
+    <div class="rounded-2xl shadow-md text-center bg-zinc-900 p-4"><h3 class="text-lg font-semibold mb-2">⭐️⭐️⭐️⭐️⭐️</h3><p class="text-gray-300 italic">“Qbit nos dio el control y la tranquilidad que necesitábamos en La Font.”</p><p class="mt-2 font-bold text-orange-500">La Font</p></div>
+    <div class="rounded-2xl shadow-md text-center bg-zinc-900 p-4"><h3 class="text-lg font-semibold mb-2">⭐️⭐️⭐️⭐️⭐️</h3><p class="text-gray-300 italic">“Qbit nos dio el control y la tranquilidad que necesitábamos en Lo de la Abuela.”</p><p class="mt-2 font-bold text-orange-500">Lo de la Abuela</p></div>
+  </div>
+
+  <div class="mt-20 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">❓ Preguntas Frecuentes</h2>
+    <div class="space-y-6">
+      <div class="bg-zinc-900 shadow rounded-xl p-5"><h3 class="font-semibold text-lg">¿Qué incluye el sistema Qbit?</h3><p class="text-gray-400 mt-2">Incluye control de stock, facturación oficial, reportes y más.</p></div>
+      <div class="bg-zinc-900 shadow rounded-xl p-5"><h3 class="font-semibold text-lg">¿Puedo usarlo desde el celular?</h3><p class="text-gray-400 mt-2">Sí, Qbit es 100% web y se adapta a cualquier dispositivo.</p></div>
+      <div class="bg-zinc-900 shadow rounded-xl p-5"><h3 class="font-semibold text-lg">¿Cuánto demora la implementación?</h3><p class="text-gray-400 mt-2">Podés empezar en menos de 24 horas con acompañamiento.</p></div>
+      <div class="bg-zinc-900 shadow rounded-xl p-5"><h3 class="font-semibold text-lg">¿Qué pasa si necesito ayuda?</h3><p class="text-gray-400 mt-2">Contamos con soporte técnico disponible 24/7.</p></div>
+    </div>
+  </div>
+
+  <div class="mt-20 bg-orange-700 text-white text-center py-12 px-6 rounded-xl shadow-inner">
+    <h2 class="text-3xl font-bold mb-4">¿Listo para Actualizar Tu Panadería?</h2>
+    <p class="text-lg mb-6">Agenda una demo personalizada y descubrí cómo QBITS puede ayudarte a optimizar TU NEGOCIO</p>
+    <a href="https://wa.me/5491164450430" target="_blank" class="inline-block bg-white text-orange-700 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100">
+      Solicitar Demo por WhatsApp
+    </a>
+    <p class="mt-4 text-sm opacity-80">Sin compromisos • Soporte personalizado • Implementación en 24 horas</p>
+  </div>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const negocio = document.getElementById('negocio').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const msg = `Hola! Soy ${nombre}, tengo un negocio de tipo ${negocio} y me gustaría conocer más sobre Qbit. Mi WhatsApp es ${whatsapp}`;
+      const url = `https://wa.me/5491164450430?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
